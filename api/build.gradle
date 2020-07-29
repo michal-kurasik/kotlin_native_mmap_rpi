@@ -1,0 +1,14 @@
+group 'com.snowbizz.k4rpi'
+version '0.0.1'
+
+kotlin {
+    linuxArm32Hfp("arm")
+
+    sourceSets {
+        armMain {
+            dependencies {
+                implementation kotlin('stdlib-common')
+            }
+        }
+    }
+}

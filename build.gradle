@@ -1,0 +1,21 @@
+plugins {
+    id 'org.jetbrains.kotlin.multiplatform' version '1.3.72'
+}
+subprojects {
+    apply plugin: 'org.jetbrains.kotlin.multiplatform'
+
+    repositories {
+        mavenCentral()
+    }
+
+    kotlin {
+        sourceSets {
+            all {
+                languageSettings {
+                    useExperimentalAnnotation('kotlin.ExperimentalUnsignedTypes')
+                }
+            }
+        }
+    }
+}
+

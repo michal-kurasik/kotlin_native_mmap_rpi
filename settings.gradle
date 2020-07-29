@@ -1,0 +1,4 @@
+rootProject.name = 'K4rpi'
+
+include ':api', ':example'
+
